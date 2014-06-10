@@ -1,0 +1,82 @@
+<h1>Foundation</h1>
+
+<p>This is a WordPress starter theme based on Foundation 5 by Zurb. The purpose of Foundation, is to act as a small and handy toolbox that contains the essentials needed to build any design. Foundation is meant to be a starting point, not the final product. If you&rsquo;re looking for an all-in-one theme with built-in shortcodes, plugins, fancypancy portfolio templates or whatnot, I&rsquo;m afraid you have to look elsewhere.</p>
+
+<p>Please fork, copy, modify, delete, share or do whatever you like with this.</p>
+
+<p>All contributions are welcome!</p>
+
+<h2>Requirements</h2>
+
+<p><em>You&rsquo;ll need to have the following items installed before continuing.</em></p>
+
+<ul>
+<li><a href="http://nodejs.org">Node.js</a>: Use the installer provided on the NodeJS website.</li>
+<li><a href="http://gruntjs.com/">Grunt</a>: Run <code>[sudo] npm install -g grunt-cli</code></li>
+<li><a href="http://bower.io">Bower</a>: Run <code>[sudo] npm install -g bower</code></li>
+</ul>
+
+
+<h2>Quickstart</h2>
+
+<p><code>bash
+cd my-wordpress-folder/wp-content/themes/
+git clone git@github.com:olefredrik/Foundation.git
+mv Foundation your-theme-name
+cd your-theme-name
+npm install &amp;&amp; bower install
+</code></p>
+
+<p>While you&rsquo;re working on your project, run:</p>
+
+<p><code>grunt</code></p>
+
+<p>And you&rsquo;re set!</p>
+
+<p>Check for Foundation Updates? Run:
+<code>foundation update</code>
+(this requires the foundation gem to be installed in order to work. Please see the <a href="http://foundation.zurb.com/docs/sass.html">docs</a> for details.)</p>
+
+<h2>Stylesheet Folder Structure</h2>
+
+<ul>
+<li><p><code>style.css</code>: Do not worry about this file. (For some reason) it&rsquo;s required by WordPress. All styling are handled in the Sass files described below</p></li>
+<li><p><code>scss/app.scss</code>: Sass imports for global config, foundation and site structure</p></li>
+<li><p><code>scss/config/_variables.scss</code>: Your custom variables</p></li>
+<li><code>scss/config/_colors.scss</code>: Your custom color scheme</li>
+<li><p><code>scss/config/_settings.scss</code>: Original Foundation 5 base settings</p></li>
+<li><p><code>scss/site/_structure</code>: Your custom site structure</p></li>
+<li><p><code>css/app.css</code>: All Sass files are minified and compiled to this file</p></li>
+</ul>
+
+
+<h2>Script Folder Strucutre</h2>
+
+<ul>
+<li><code>bower_components/</code>: This is the source folder where all Foundation scripts are located. <code>foundation update</code> will check and update scripts in this folder</li>
+<li><code>js/</code>: jQuery, Modernizr and Foundation scripts are copied from <code>bower_components/</code> to this directory, where they are minified and concatinated and enqueued in WordPress</li>
+<li>Please note that you must run <code>grunt</code> in your terminal for the scripts to be copied. See <a href="https://github.com/olefredrik/Foundation/blob/master/Gruntfile.js">Gruntfile.js</a> for details</li>
+</ul>
+
+
+<h2>How to get started with Foundation</h2>
+
+<ul>
+<li><a href="http://foundation.zurb.com/docs/">Zurb Foundation Docs</a></li>
+</ul>
+
+
+<h2>Learn how to use WordPress</h2>
+
+<ul>
+<li><a href="http://codex.wordpress.org/">WordPress Codex</a></li>
+</ul>
+
+
+<h2>Demo</h2>
+
+<ul>
+<li><a href="http://Foundation.olefredrik.com/">Clean Foundation install</a></li>
+<li><a href="http://Foundation.olefredrik.com/kitchen-sink/">Foundation Kitchen Sink - see every single element in action</a></li>
+</ul>
+

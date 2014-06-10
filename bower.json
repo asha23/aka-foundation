@@ -1,0 +1,6 @@
+{
+  "name": "AKA-Barebones-Foundation",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}
